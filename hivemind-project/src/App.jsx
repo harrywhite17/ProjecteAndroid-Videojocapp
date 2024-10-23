@@ -2,10 +2,10 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
+    { name: 'Home', href: '#', current: true },
+    { name: 'Productes', href: '#', current: false },
+    { name: 'Blog', href: '#', current: false },
+    { name: 'Contacta.ns', href: '#', current: false },
 ]
 
 function classNames(...classes) {
@@ -14,7 +14,7 @@ function classNames(...classes) {
 
 export default function Example() {
     return (
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-gray-800 rounded-3xl">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -30,7 +30,7 @@ export default function Example() {
                         <div className="flex flex-shrink-0 items-center">
                             <img
                                 alt="Your Company"
-                                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                                src="public/hivemind_logo_nobg.png"
                                 className="h-8 w-auto"
                             />
                         </div>
