@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d336ea22-aa81-4203-a75e-d77c5bc03b34" name="Changes" comment="">
+    <list default="true" id="d336ea22-aa81-4203-a75e-d77c5bc03b34" name="Changes" comment="in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hivemind-project/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hivemind-project/src/App.jsx" afterDir="false" />
     </list>
@@ -69,11 +69,24 @@
       <updated>1729533597000</updated>
       <workItem from="1729533598133" duration="1017000" />
       <workItem from="1729618801109" duration="2724000" />
-      <workItem from="1729705299234" duration="4867000" />
+      <workItem from="1729705299234" duration="6218000" />
     </task>
+    <task id="LOCAL-00001" summary="in progress">
+      <option name="closed" value="true" />
+      <created>1729710437427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729710437427</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="in progress" />
   </component>
 </project>
