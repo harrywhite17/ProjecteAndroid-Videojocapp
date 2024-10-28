@@ -15,7 +15,7 @@ function classNames(...classes) {
 
 function NavigationBar(){
     return(
-        <Disclosure as="nav" className="bg-black/60 rounded-3xl mt-2 w-5/6 mx-auto backdrop-blur-2xl sticky top-2">
+        <Disclosure as="nav" className="bg-black/60 rounded-3xl mt-2 w-5/6 mx-auto backdrop-blur-2xl sticky top-2 z-10">
             <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-8 ">
                 <div className="relative flex h-16 items-center justify-between">
 
