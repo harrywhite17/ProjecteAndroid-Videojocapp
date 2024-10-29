@@ -1,6 +1,8 @@
 import {Dialog, DialogPanel, Disclosure, Menu, MenuButton, MenuItem, MenuItems} from '@headlessui/react'
 import {Bars3Icon, BellIcon, XMarkIcon} from '@heroicons/react/24/outline'
 import {useState} from "react";
+import FeaturesSection from "./components/features.jsx";
+import Testimonis from "./components/testimonis";
 
 const navigation = [
     { name: 'Home', href: '#', current: true },
@@ -262,6 +264,8 @@ export default function Webpage() {
         <section>
             <NavigationBar/>
             <HeroSection />
+            <Testimonis />
+            <FeaturesSection />
         </section>
     )
 }
