@@ -3,6 +3,7 @@ import {Bars3Icon, BellIcon, XMarkIcon} from '@heroicons/react/24/outline'
 import {useState} from "react";
 import FeaturesSection from "./components/features.jsx";
 import Testimonis from "./components/testimonis";
+import TeamsSection from "./components/teams.jsx";
 
 const navigation = [
     { name: 'Home', href: '#', current: true },
@@ -265,6 +266,7 @@ export default function Webpage() {
             <NavigationBar/>
             <HeroSection />
             <Testimonis />
+            <TeamsSection />
             <FeaturesSection />
         </section>
     )
