@@ -169,7 +169,7 @@ function HeroSection() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <div className="relative flex flex-col items-center justify-center text-white">
+        <div className="relative flex flex-col items-center justify-center text-white hivemind-hero-section">
             <div className="hero-background" />
             <div className="w-full h-full relative z-10">
                 <header className="absolute inset-x-0 top-0 z-50">
@@ -226,19 +226,19 @@ function HeroSection() {
                     <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
                         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                             <div
-                                className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                                className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white hover:ring-gray-900/20">
                                 Announcing our next round of funding.{' '}
-                                <a href="#" className="font-semibold text-indigo-600">
+                                <a href="#" className="font-semibold text-cyan-300">
                                     <span aria-hidden="true" className="absolute inset-0"/>
                                     Read more <span aria-hidden="true">&rarr;</span>
                                 </a>
                             </div>
                         </div>
                         <div className="text-center">
-                            <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+                            <h1 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
                                 El futur dels videojocs està aquí
                             </h1>
-                            <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
+                            <p className="mt-8 text-lg font-medium text-white sm:text-xl/8">
                                 Nosaltres tenim la solució perfecta per a que puguis disfrutar del teu temps amb els amics
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -248,7 +248,7 @@ function HeroSection() {
                                 >
                                     Get started
                                 </a>
-                                <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                                <a href="#" className="text-sm font-semibold leading-6 text-white">
                                     Registra&#39;t gratuïtament<span aria-hidden="true">→</span>
                                 </a>
                             </div>
