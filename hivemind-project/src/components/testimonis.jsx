@@ -26,15 +26,15 @@ const testimonials = [
 
 function Testimonis() {
     return (
-        <div id="testimonials" className="max-w-5xl mx-auto p-8 text-center">
-            <h1 className="text-3xl font-semibold mb-8">Testimonials</h1>
+        <div id="testimonials" className="max-w-5xl mx-auto p-8 text-center text-white">
+            <h1 className="text-3xl font-semibold mb-8 text-white">Testimonials</h1>
             <div className="flex flex-col md:flex-row md:space-x-8 space-y-6 md:space-y-0">
                 {testimonials.map((testimonial, index) => (
-                    <div key={index} className="bg-white p-6 rounded shadow-lg flex flex-col items-center">
+                    <div key={index} className="backdrop-blur-3xl p-6 rounded-3xl shadow-lg flex flex-col items-center">
                         <img src={testimonial.image} alt={testimonial.name} className="rounded-full w-24 h-24 mb-4" />
                         <h2 className="font-bold text-xl">{testimonial.name}</h2>
                         <p className="text-blue-500">{testimonial.profession}</p>
-                        <p className="mt-2 text-lg italic text-gray-700">&quot;{testimonial.text}&quot;</p>
+                        <p className="mt-2 text-lg italic text-white">&quot;{testimonial.text}&quot;</p>
                         <div className="mt-2 text-yellow-500">
                             {'★'.repeat(Math.floor(testimonial.rating))}{'☆'.repeat(5 - Math.floor(testimonial.rating))}
                         </div>

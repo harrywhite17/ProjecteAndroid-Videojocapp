@@ -4,6 +4,7 @@ import {useState} from "react";
 import FeaturesSection from "./components/features.jsx";
 import Testimonis from "./components/testimonis";
 import TeamsSection from "./components/teams.jsx";
+import './index.css';
 
 const navigation = [
     { name: 'Home', href: '#', current: true },
