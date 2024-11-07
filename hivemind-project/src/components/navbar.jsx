@@ -4,7 +4,7 @@ import {Bars3Icon, BellIcon, XMarkIcon} from '@heroicons/react/24/outline'
 
 export default function NavigationBar(){
     const navigation = [
-        { name: 'Home', href: '#', current: true },
+        { name: 'Home', href: '/', current: true },
         { name: 'Productes', href: '/products', current: false },
         { name: 'Blog', href: '#', current: false },
         { name: 'Contacta.ns', href: '#', current: false },
@@ -18,7 +18,7 @@ export default function NavigationBar(){
         <Disclosure as="nav" className="bg-black/60 rounded-3xl mt-2 w-5/6 mx-auto backdrop-blur-2xl sticky top-2 z-10">
             <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-8 ">
                 <div className="relative flex h-16 items-center justify-between">
-
+ 
                     {/* Mobile menu button and menu panel */}
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <Disclosure>

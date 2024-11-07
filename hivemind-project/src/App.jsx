@@ -1,19 +1,32 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavigationBar from "./components/navbar.jsx";
 import HeroSection from "./components/herosection.jsx";
 import FeaturesSection from "./components/features.jsx";
 import Testimonis from "./components/testimonis";
 import TeamsSection from "./components/teams.jsx";
+import Products from "./pages/Products.jsx";
 import './index.css';
 
 function App() {
     return (
-        <div>
-            <NavigationBar />
-            <HeroSection />
-            <Testimonis />
-            <TeamsSection />
-            <FeaturesSection />
-        </div>
+        <Router>
+            <div>
+                <NavigationBar />
+                <Routes>
+                    <Route path="/" element={
+                        <>
+                            <HeroSection />
+                            <Testimonis />
+                            <TeamsSection />
+                            <FeaturesSection />
+                        </>
+                    } />
+                    <Route path="/products" element={
+                        <Products />
+                    } />
+                </Routes>
+            </div>
+        </Router>
     );
 }
 
