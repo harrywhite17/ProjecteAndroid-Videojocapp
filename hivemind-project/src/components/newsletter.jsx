@@ -1,34 +1,27 @@
 import React, { useState } from 'react';
 
 function Newsletter() {
-    const [email, setEmail] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Subscriure:', email);
-        setEmail('');
-    };
-
     return (
-        <section className="bg-gray-800 text-white p-8 rounded-lg text-center max-w-md mx-auto">
-            <h2 className="text-2xl font-semibold mb-4">Subscriu-te al nostre Newsletter</h2>
-            <p className="text-lg mb-6">Mantén-te informat amb les últimes notícies!</p>
-            <form className="flex flex-col sm:flex-row items-center gap-4" onSubmit={handleSubmit}>
-                <input
-                    type="email"
-                    placeholder="Introdueix el teu correu electrònic"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    className="px-4 py-2 rounded-md w-full sm:w-auto flex-1 text-gray-800"
-                />
-                <button
-                    type="submit"
-                    className="px-4 py-2 bg-yellow-500 text-gray-800 font-semibold rounded-md hover:bg-yellow-600 transition"
-                >
-                    Subscriu-me
-                </button>
-            </form>
+        <section className="py-20 bg-gradient-to-br bg-transparent backdrop-blur-3xl rounded-3xl mt-10">
+            <div className="from-teal-700 via-teal-600 to-teal-700 relative font-[sans-serif]">
+                <div className="max-w-2xl mx-auto text-center">
+                    <h2 className="text-white text-4xl font-extrabold">Subscribe to Our Newsletter</h2>
+                    <div className="my-6">
+                        <p className="text-base text-gray-200">Subscribe to our newsletter and stay up to date with the
+                            latest news, updates, and exclusive offers. Get valuable insights. Join our community today!</p>
+                    </div>
+
+                    <div
+                        className="max-w-2xl left-0 right-0 mx-auto w-full p-5 flex items-center shadow-lg absolute -bottom-10">
+                        <input type="email" placeholder="Enter your email"
+                               className="w-full bg-red py-3.5 px-4 text-gray-800 text-base focus:outline-none"/>
+                        <button
+                            className="bg-[#a91079] hover:bg-[#a91079e2] text-white text-base font-semibold tracking-wide py-3.5 px-6 focus:outline-none">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 }

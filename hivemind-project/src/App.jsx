@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavigationBar from "./components/navbar.jsx";
 import HeroSection from "./components/herosection.jsx";
 import FeaturesSection from "./components/features.jsx";
+import NewsLetter from "./components/newsletter.jsx";
 import Testimonis from "./components/testimonis";
 import TeamsSection from "./components/teams.jsx";
 import Products from "./pages/Products.jsx";
@@ -19,6 +20,7 @@ function App() {
                             <Testimonis />
                             <TeamsSection />
                             <FeaturesSection />
+                            <NewsLetter />
                         </>
                     } />
                     <Route path="/products" element={
