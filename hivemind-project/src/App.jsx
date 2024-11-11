@@ -5,7 +5,7 @@ import FeaturesSection from "./components/features.jsx";
 import NewsLetter from "./components/newsletter.jsx";
 import Testimonis from "./components/testimonis";
 import TeamsSection from "./components/teams.jsx";
-import Products from "./pages/Products.jsx";
+import ProductsContent from './components/products.jsx';   
 import './index.css';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
                         </>
                     } />
                     <Route path="/products" element={
-                        <Products />
+                        <ProductsContent />
                     } />
                 </Routes>
             </div>
