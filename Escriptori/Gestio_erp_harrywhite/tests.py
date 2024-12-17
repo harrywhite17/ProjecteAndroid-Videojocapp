@@ -29,7 +29,6 @@ for client in [anna, pere, joan]:
             print(comanda.resum())
     else:
         print(f"El client {client.nom} no té cap comanda.")
-    print("None")
 
 # Afegir productes i gestionar errors
 try:
@@ -56,4 +55,3 @@ print("COMANDES DELS CLIENTS")
 print(f"Comandes del client Anna: {len(anna.consultar_comandes())}")
 for comanda in anna.consultar_comandes():
     print(comanda.resum())
-print("None")
