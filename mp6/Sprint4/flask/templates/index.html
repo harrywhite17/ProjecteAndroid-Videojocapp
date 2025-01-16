@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Flask</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <a href="{{ url_for('create') }}">Add New Product</a>
+    <ul>
+        {% for product in products %}
+            <li>
+                <strong>{{ product.name }}</strong> - ${{ product.price }}<br>
+                {{ product.description }}<br>
+                <a href="{{ url_for('update', id=product.id) }}">Edit</a> |
+                <form action="{{ url_for('delete', id=product.id) }}" method="POST" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
