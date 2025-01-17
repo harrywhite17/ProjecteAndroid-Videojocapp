@@ -4,50 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Models\Video;
 use Illuminate\Http\Request;
+use function App\Helpers\create_default_video;
 
 class VideosController extends Controller
 {
-    public function index()
+    public function show($id = null)
     {
-        $videos = Video::all();
+        if (!$id) {
+            $videoData = create_default_video();
+        } else {
+            $video = Video::findOrFail($id);
+            $videoData = create_default_video(); // Use default video data
+        }
 
-        /** @var view-string $view */
-        $view = 'videos.index';
-        return view($view, ['videos' => $videos]);
-    }
-
-    public function show(Video $video)
-    {
-        /** @var view-string $view */
-        $view = 'videos.show';
-        return view($view, compact('video'));
-    }
-
-    public function store(Request $request)
-    {
-        $data = $request->validate([
-            'title' => 'required|string',
-            'url' => 'required|string', // Ensure URL is validated before storing
-            'published_at' => 'nullable|date',
-            'is_default' => 'nullable|boolean',
-        ]);
-
-        $video = Video::create($data);
-
-        return redirect()->route('videos.show', $video);
-    }
-
-    public function update(Request $request, Video $video)
-    {
-        $data = $request->validate([
-            'title' => 'required|string',
-            'url' => 'required|string', // Ensure URL is validated before updating
-            'published_at' => 'nullable|date',
-            'is_default' => 'nullable|boolean',
-        ]);
-
-        $video->update($data);
-
-        return redirect()->route('videos.show', $video);
+        return view('videos.show', ['video' => $videoData]);
     }
 }

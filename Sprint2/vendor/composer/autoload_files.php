@@ -41,4 +41,5 @@ return array(
     'a1cfe24d14977df6878b9bf804af2d1c' => $vendorDir . '/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php',
     'ec07570ca5a812141189b1fa81503674' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
     '8186039dd6759a050daf100e8b9c2f83' => $baseDir . '/app/Helpers/UserHelpers.php',
+    '8a8568db7d9147d86a7186d4a9698448' => $baseDir . '/app/Helpers/VideoHelper.php',
 );

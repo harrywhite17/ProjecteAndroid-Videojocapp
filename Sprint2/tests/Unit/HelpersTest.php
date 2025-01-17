@@ -1,54 +1,35 @@
 <?php
 
-namespace Tests\Unit;
+namespace Tests\Feature;
 
-use App\Helpers\VideoHelper;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Artisan;
 use Tests\TestCase;
-use App\Models\Video;
+use App\Models\User;
+use App\Models\Team;
 
 class HelpersTest extends TestCase
 {
     use RefreshDatabase;
 
-    protected function setUp(): void
+    public function test_create_default_user()
     {
-        parent::setUp();
-        Artisan::call('migrate');
-        $this->seedDefaultVideos();
+        $user = create_default_user();
+
+        $this->assertInstanceOf(User::class, $user);
+        $this->assertEquals(config('userdefaults.default_user.name'), $user->name);
+        $this->assertEquals(config('userdefaults.default_user.email'), $user->email);
+        $this->assertTrue(\Hash::check(config('userdefaults.default_user.password'), $user->password));
+        $this->assertInstanceOf(Team::class, $user->currentTeam);
     }
 
-    public function testDefaultVideos()
+    public function test_create_default_teacher()
     {
-        $video = \App\Models\Video::create([
-            'title' => 'Neque dolor aut inventore.',
-            'url' => 'http://example.com/video1',
-            'is_default' => true,
-            'published_at' => '2023-04-13 23:23:48',
-        ]);
-        $this->assertTrue($video->is_default);
-    }
+        $teacher = create_default_teacher();
 
-    public function testDefaultVideosCreation()
-    {
-        $video = \App\Models\Video::create([
-            'title' => 'Quo ad ex facere nemo accusantium ea et.',
-            'url' => 'http://example.com/video2',
-            'is_default' => true,
-            'published_at' => '2018-01-23 13:55:47',
-        ]);
-        $this->assertTrue($video->is_default);
-    }
-
-    private function seedDefaultVideos()
-    {
-        Video::factory()->count(5)->create(['is_default' => true]);
-    }
-
-    public function test_default_videos_creation()
-    {
-        $defaultVideos = VideoHelper::getDefaultVideos();
-        $this->assertCount(5, $defaultVideos);
+        $this->assertInstanceOf(User::class, $teacher);
+        $this->assertEquals(config('userdefaults.default_teacher.name'), $teacher->name);
+        $this->assertEquals(config('userdefaults.default_teacher.email'), $teacher->email);
+        $this->assertTrue(\Hash::check(config('userdefaults.default_teacher.password'), $teacher->password));
+        $this->assertInstanceOf(Team::class, $teacher->currentTeam);
     }
 }

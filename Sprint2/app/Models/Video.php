@@ -10,10 +10,18 @@ class Video extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'published_at', 'is_default', 'url'];
+    protected $fillable = [
+        'title',
+        'description',
+        'url',
+        'published_at',
+        'previous',
+        'next',
+        'series_id',
+    ];
 
     protected $casts = [
-        'published_at' => 'datetime', // Ensure published_at is cast to a Carbon instance
+        'published_at' => 'datetime',
     ];
 
     public function getFormattedPublishedAtAttribute()

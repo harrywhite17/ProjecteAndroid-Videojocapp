@@ -42,6 +42,7 @@ class ComposerStaticInit8de55831b151bf87ea7306153147d459
         'a1cfe24d14977df6878b9bf804af2d1c' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '8186039dd6759a050daf100e8b9c2f83' => __DIR__ . '/../..' . '/app/Helpers/UserHelpers.php',
+        '8a8568db7d9147d86a7186d4a9698448' => __DIR__ . '/../..' . '/app/Helpers/VideoHelper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -591,7 +592,6 @@ class ComposerStaticInit8de55831b151bf87ea7306153147d459
         'App\\Actions\\Jetstream\\InviteTeamMember' => __DIR__ . '/../..' . '/app/Actions/Jetstream/InviteTeamMember.php',
         'App\\Actions\\Jetstream\\RemoveTeamMember' => __DIR__ . '/../..' . '/app/Actions/Jetstream/RemoveTeamMember.php',
         'App\\Actions\\Jetstream\\UpdateTeamName' => __DIR__ . '/../..' . '/app/Actions/Jetstream/UpdateTeamName.php',
-        'App\\Helpers\\VideoHelper' => __DIR__ . '/../..' . '/app/Helpers/VideoHelper.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\VideosController' => __DIR__ . '/../..' . '/app/Http/Controllers/VideosController.php',
         'App\\Models\\Membership' => __DIR__ . '/../..' . '/app/Models/Membership.php',
@@ -797,7 +797,9 @@ class ComposerStaticInit8de55831b151bf87ea7306153147d459
         'DASPRiD\\Enum\\NullValue' => __DIR__ . '/..' . '/dasprid/enum/src/NullValue.php',
         'Database\\Factories\\TeamFactory' => __DIR__ . '/../..' . '/database/factories/TeamFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
+        'Database\\Factories\\VideoFactory' => __DIR__ . '/../..' . '/database/factories/VideoFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\VideoSeeder' => __DIR__ . '/../..' . '/database/seeders/VideoSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
         'DateInvalidOperationException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php',
@@ -7407,7 +7409,6 @@ class ComposerStaticInit8de55831b151bf87ea7306153147d459
         'Tests\\Feature\\UpdatePasswordTest' => __DIR__ . '/../..' . '/tests/Feature/UpdatePasswordTest.php',
         'Tests\\Feature\\UpdateTeamMemberRoleTest' => __DIR__ . '/../..' . '/tests/Feature/UpdateTeamMemberRoleTest.php',
         'Tests\\Feature\\UpdateTeamNameTest' => __DIR__ . '/../..' . '/tests/Feature/UpdateTeamNameTest.php',
-        'Tests\\Feature\\Videos\\VideosTest' => __DIR__ . '/../..' . '/tests/Feature/Videos/VideosTest.php',
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Tests\\Unit\\ExampleTest' => __DIR__ . '/../..' . '/tests/Unit/ExampleTest.php',
         'Tests\\Unit\\HelpersTest' => __DIR__ . '/../..' . '/tests/Unit/HelpersTest.php',
