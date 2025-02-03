@@ -1,0 +1,22 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme -->
+    <style name="Theme.VideoJocApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryColor</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+
+        <!-- Text color -->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+
+        <!-- Background color -->
+        <item name="android:windowBackground">@color/backgroundColor</item>
+
+        <!-- Customize App Bar -->
+        <item name="android:statusBarColor">@color/primaryColor</item>
+    </style>
+
+</resources>

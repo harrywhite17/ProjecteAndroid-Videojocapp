@@ -1,0 +1,33 @@
+<resources>
+    <!-- App Name -->
+
+    <!-- Buttons and labels -->
+    <string name="add_videojoc">Add Video Game</string>
+    <string name="save_videojoc">Save Video Game</string>
+    <string name="edit_videojoc">Edit Video Game</string>
+    <string name="close">Close</string>
+
+    <!-- Text hints for fields -->
+    <string name="enter_game_name">Enter Game Name</string>
+    <string name="enter_release_date">Enter Release Date</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="enter_rating">Enter Rating</string>
+
+    <!-- Other labels -->
+    <string name="creator_info">This app was created by [Your Name].</string>
+    <string name="video_game_details">Video Game Details</string>
+
+    <!-- Navigation labels -->
+    <string name="home">Home</string>
+    <string name="add_edit_video_game">Add/Edit Video Game</string>
+
+    <string name="app_name">VideoJocApp</string>
+    <string name="name">Name</string>
+    <string name="release_date">Release Date</string>
+    <string name="description">Description</string>
+    <string name="rating">Rating</string>
+    <string name="platform">Platform</string>
+    <string name="year">Year</string>
+    <string name="save">Save</string>
+    <string name="please_fill_all_the_fields">Please fill all the fields</string>
+</resources>
