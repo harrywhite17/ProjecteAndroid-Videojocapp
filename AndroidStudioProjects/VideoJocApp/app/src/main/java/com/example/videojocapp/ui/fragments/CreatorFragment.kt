@@ -1,9 +1,7 @@
 package com.example.videojocapp.ui.fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.videojocapp.R
 import com.example.videojocapp.databinding.FragmentCreatorBinding

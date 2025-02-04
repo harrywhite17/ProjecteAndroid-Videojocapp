@@ -3,25 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@id/homeFragment">
-
     <!-- Home Fragment -->
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.videojocapp.ui.fragments.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home">
-
         <!-- Action from HomeFragment to AddEditFragment -->
         <action
             android:id="@+id/action_home_to_add_edit"
             app:destination="@id/addEditFragment" />
-
         <!-- Action from HomeFragment to DetailFragment -->
         <action
             android:id="@+id/action_home_to_detail"
             app:destination="@id/detailFragment" />
     </fragment>
-
     <fragment
         android:id="@+id/addEditFragment"
         android:name="com.example.videojocapp.ui.fragments.AddEditFragment"
@@ -31,7 +27,6 @@
             app:argType="long"
             android:defaultValue="0L" />
     </fragment>
-
     <!-- Detail Fragment -->
     <fragment
         android:id="@+id/detailFragment"

@@ -1,6 +1,4 @@
 <resources>
-    <!-- App Name -->
-
     <!-- Buttons and labels -->
     <string name="add_videojoc">Add Video Game</string>
     <string name="save_videojoc">Save Video Game</string>
